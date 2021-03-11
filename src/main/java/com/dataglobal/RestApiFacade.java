@@ -8,12 +8,8 @@ import kong.unirest.Unirest;
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
 
-
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +17,6 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 /**
@@ -83,15 +78,7 @@ public class RestApiFacade {
 
     }
 
-    /**
-     * Download a document
-     * @param dbID
-     * @param docID
-     */
-    public  void queryDocument(int dbID , int docID)
-    {
-        throw new UnsupportedOperationException();
-    }
+
 
     /**
      * upload a single file
@@ -211,7 +198,7 @@ public class RestApiFacade {
 
     /**
      * query documents
-     * @param dbID department id
+     * @param departmentName department name
      * @param query field value list whiche represents the query
      * @return a list of docIds an empty list if nothing was found
      */

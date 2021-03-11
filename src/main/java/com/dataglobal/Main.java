@@ -1,12 +1,10 @@
 package com.dataglobal;
 
-import kong.unirest.json.JSONObject;
 import net.steppschuh.markdowngenerator.table.Table;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.LogManager;
